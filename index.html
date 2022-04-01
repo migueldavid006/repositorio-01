@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./style.css">
+   <script src="app.js"></script>
+    <title>menu de navagacion</title>
+</head>
+
+<body id="body">
+    <header>
+    <nav class="menu" id="menu">
+    
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <a href="#" class="enlace">
+            <img src="logo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="#body">About</a></li>
+            <li><a href="#port">Portafolio</a></li>
+            <li><a href="#form">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+ 
+</header>
+<main class="main" >
+    <div class="infocontent">
+        <h1>I am <span>miguel Davd</span></h1>
+        <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quibusdam dicta magni asperiores deleniti officia ullam hic rem laborum eum?</p>
+    <a downowld href="#">
+        <button class="dcv" >Downold CV</button>
+    </a>
+    </div>
+
+    <img src="img/about-model.png" alt="logo">
+</main>
+
+    <div id="port" class="portfolio">
+        <div class="portfolio-heading">
+         
+            <div class="divider"></div>
+        </div>
+
+        <main class="contenido-principal">
+            <h2 class="port"> MY PORTFOLIO</h2>
+            <article class="entrada">
+                <img src="./img/carrito.png" alt="texto entrada">
+                <div class="contenido">
+                    <h3>Carrito de compras 
+                        
+                        <i class="fa-brands fa-js fa-xl" style="color: #EFD81D;" ></i>
+                    </h3>
+
+                   
+                    <a href="#"  class="boton2">repositorio <i class="fa-brands fa-github fa-lg"></i> </a> 
+                     <a href="https://gallant-bartik-691dc9.netlify.app/" target="_black" class="boton">ver demo</a> 
+                    
+               
+
+                </div>
+            </article>
+       
+            <article class="entrada">
+                <img src="./img/gasto_semanal.png" alt="texto entrada">
+                <div class="contenido">
+                    <h3>Gasto Semanal
+                        <i class="fa-brands fa-js fa-xl" style="color: #EFD81D;" ></i>
+                    </h3>
+                 
+                    <a href="#" class="boton2">repositorio <i class="fa-brands fa-github fa-lg"></i> </a> 
+                     <a href="https://heuristic-neumann-12e80d.netlify.app/" target="_black" class="boton">ver demo</a> 
+                    
+                
+
+                </div>
+            </article>
+         
+
+         
+
+            <article class="entrada">
+                <img src="img/clima.png" alt="texto entrada">
+                <div class="contenido">
+                    <h3>app consultar temperatura del clima 
+                        <i class="fa-brands fa-react fa-xl" style="color: #2FD0F1 ;"></i> 
+                    </h3>
+
+                  
+
+                    <a href="#" class="boton2">repositorio <i class="fa-brands fa-github fa-lg"></i> </a> 
+                     <a href="https://vigorous-roentgen-ab9419.netlify.app/" target="_black" class="boton">ver demo</a> 
+                    
+                
+
+                </div>
+            </article>
+
+
+        
+
+         
+            <article class="entrada">
+                <img src="img/mega_menu.png" alt="texto entrada">
+                <div class="contenido">
+                    <h3>Menu categorias y SUB-categorias 
+                        <i class="fa-brands fa-react fa-xl" style="color: #2FD0F1 ;"></i> 
+                    </h3>
+
+                
+
+                    <a href="#" class="boton2">repositorio <i class="fa-brands fa-github fa-lg"></i> </a> 
+                     <a href="https://taupe-dasik-c8e808.netlify.app/" target="_black" class="boton">ver demo</a> 
+                    
+                 
+
+                </div>
+            </article>
+
+         
+     
+           
+          
+          
+          
+          
+
+
+         
+
+        </main>
+
+
+
+
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-headeing">
+            <div class="divider"></div>
+
+        </div>
+
+        <div class="container-contact">
+          
+
+            <div class="contenedor">
+
+                <form id="form" class="form"  >
+                   <div class="form-header">
+                       <h1 class="form-titulo">C<span>ontacto</span></h1>
+                   </div>
+
+                   <label for="name" class="form-label">Nombre</label>
+                   <input type="text" id="nombre" name="name" class="form-input" placeholder="escriba su nombre"  required>
+
+                   <label for="email" class="form-label">Correo Electronico</label>
+                   <input type="email" class="form-input" id="correo" name="email" placeholder="escriba su correo"  required>
+
+                   <label for="message" class="form-label" >mensaje</label>
+                   <textarea name="message" class="form-textarea" placeholder="Aqui escriba su mensaje"></textarea>
+
+                   <input type="submit" class="btn-submit" value="Enviar">
+
+                </form>
+                <a href="mailto:migueldavid006@gmail.com" id="trucazo">mail</a>
+            </div>
+
+        </div>
+    </div>
+   
+
+
+    <script>
+      const $form =  document.querySelector('#form')
+      const $buttonMailto =  document.querySelector('#trucazo')
+
+      $form.addEventListener('submit', handleSubmit )
+
+      function handleSubmit(event){
+        event.preventDefault()
+          const form =  new FormData(this)
+          console.log(form.get('name'));
+      const $form =  document.querySelector('#form')
+          $buttonMailto.setAttribute('href',`mailto:migueldavid006@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')}&body=${form.get('message')}`)
+          $buttonMailto.click()
+          form.reset();
+        }
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+          let formulario = document.getElementById('form');
+          formulario.addEventListener('submit', function() {
+            formulario.reset();
+          });
+        });
+      </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
